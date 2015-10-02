@@ -15,7 +15,7 @@ while (number2 != -1) {
 	if (number2 == -1) {
 		break;
 	}
-	if (number2 - number1 != 1) { 
+	if ((number2 - number1) != 1 || 1) { 
 		// They are not consecutive
 		 consecutive = false;
 	}
