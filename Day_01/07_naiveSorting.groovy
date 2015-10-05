@@ -26,6 +26,7 @@ for (int x = 0; x < numbers.length - 1; x++) {
 		if (numbers[0] > number[2]) {
 			temp = numbers[0];
 			numbers[0] = numbers[2];
-			numbers[]
+			numbers[2] = temp;
 		}
+		println (numbers[x])
 }		
