@@ -3,30 +3,33 @@ Write a program that reads three numbers and prints them in order,
 from lowest to highest.
 */
 
-int temp;
+int x = 0;
 int[] numbers = new int [3];
 println "Please enter " + numbers.length + " numbers to be sorted.";
-for (int x = 0; x < numbers.length - 1; x++) {
-	// find the lowest number in the list, using Selection Sort.
+	while (x < 3) {
+		println	"Enter a number: "
+		String str = System.console().readLine();
+		numbers[x] = Integer.parseInt(str);
+		x++;
+	}
+	for (int y = 0; y < numbers.length - 1; y++) {
+		// find the lowest number in the list, using Selection Sort.
+		double currLowNumber = numbers[y]; 
+		int currLowIndex = y;
 
-	println	"Enter a number: "
-	String str = System.console().readLine();
-	numbers[x] = Integer.parseInt(str);
-		
-		if (numbers[2] < numbers[1]) {
-		temp = numbers[2];
-		numbers[2] = numbers[1];
-		numbers[1] = temp;
+	for (int z = y + 1; z < numbers.length; z++) { 
+		if (currLowNumber > numbers[z]) {
+           	currLowNumber = numbers[z];
+            currLowIndex = z;
 		}
-		if (numbers[1] < number[0]) {
-			temp = numbers[1];
-			numbers[1] = numbers[0];
-			numbers[0] = temp;
-		}
-		if (numbers[0] > number[2]) {
-			temp = numbers[0];
-			numbers[0] = numbers[2];
-			numbers[2] = temp;
-		}
-		println (numbers[x])
-}		
+	}
+	// Swap the index if we have a lower number.
+	if (currLowIndex != y) { 
+		numbers[currLowIndex] = numbers[y]; 
+		numbers[y] = currLowNumber;
+		}	
+	println ("Your three sorted numbers from lowest to highest are " + numbers);	  
+}
+
+
+
