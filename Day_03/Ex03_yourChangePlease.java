@@ -30,22 +30,22 @@ public class Ex03_yourChangePlease {
 		remainingAmount = remainingAmount % 100;
 
 		 // Find the number of pence in the remaining amount.
-		int fiftyPence = remainingAmount / 50;
-		remainingAmount = remainingAmount % 50;
+		double fiftyPence = remainingAmount / .50;
+		remainingAmount = remainingAmount % .50;
 
-	 	int twentyPence = remainingAmount / 20;
-	 	remainingAmount = remainingAmount % 20;
+	 	double twentyPence = remainingAmount / .20;
+	 	remainingAmount = remainingAmount % .20;
 
-	 	int tenPence = remainingAmount / 10;
-	 	remainingAmount = remainingAmount % 10;
+	 	double tenPence = remainingAmount / .10;
+	 	remainingAmount = remainingAmount % .10;
 
-	 	int fivePence = remainingAmount / 5;
-	 	remainingAmount = remainingAmount % 5;
+	 	double fivePence = remainingAmount / .05;
+	 	remainingAmount = remainingAmount % .05;
 
-	 	int twoPence = remainingAmount / 2;
-	 	remainingAmount = remainingAmount % 2;
+	 	double twoPence = remainingAmount / .02;
+	 	remainingAmount = remainingAmount % .02;
 
-	 	int onePence = remainingAmount;
+	 	double onePence = remainingAmount;
 
 	 	// Display results
 	 	System.out.println("Your total amount is " + totalCost);
