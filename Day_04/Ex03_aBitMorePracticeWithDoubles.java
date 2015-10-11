@@ -24,10 +24,11 @@ public class Ex03_aBitMorePracticeWithDoubles {
 
 		calculator.totalAmountDue(totalBorrowed, interestRate);
 		calculator.annualAmountDue(numberOfYears);
+		calculator.interestFree(totalBorrowed);
 
 		double myTotal = calculator.totalReturn();
 		double myAnnualAmount = calculator.annualAmountReturn();
-		int myInterestIsPaid = calculator.interestPaid();
+		int myInterestIsPaid = (int) calculator.interestPaid();
 
 		System.out.println ("Your total amount to be paid is: " + myTotal);
 		System.out.println ("The amount of money to be paid yearly is: " + myAnnualAmount);
@@ -38,10 +39,11 @@ public class Ex03_aBitMorePracticeWithDoubles {
 	public static class MortgageCalculator {
 		private double total;
 		private double annualAmount;
-		private int interestFreeYears;
+		private double interestFreeYears;
+		private double interestAmount;
 
 			public void totalAmountDue (double amountBorrowed, double interest) {
-				amountBorrowed = amountBorrowed * (1 + (interest / 100);  
+				amountBorrowed = amountBorrowed * (1 + (interest / 100));  
 				total = amountBorrowed;
 			}
 
@@ -49,12 +51,10 @@ public class Ex03_aBitMorePracticeWithDoubles {
 				annualAmount += (double) total / accumulator;
 			}
 
-			public void interestFree (String interest) {
-
-
-				interestFreeYears = total 
-
-			}
+			public void interestFree (double amountBorrowed) {
+				interestAmount = total - amountBorrowed; 
+				interestFreeYears = (int) interestAmount / annualAmount; 
+				}
 
 			public double totalReturn() {
 				return total;
@@ -68,4 +68,4 @@ public class Ex03_aBitMorePracticeWithDoubles {
 				return interestFreeYears;
 			}
 	}
-} 
+}
