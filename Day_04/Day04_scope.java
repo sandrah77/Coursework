@@ -12,9 +12,6 @@ public class Day04_scope {
 
 	}
 
-
-
-
 public static class TestValues {
 
 	void add1000(int number) {
@@ -25,5 +22,4 @@ public static class TestValues {
 		System.out.println ("Ending method, parameter is " + number);
 		}
 	}
-
 }
