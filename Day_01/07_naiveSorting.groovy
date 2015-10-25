@@ -5,9 +5,9 @@ from lowest to highest.
 
 int x = 0;
 int[] numbers = new int [3];
-println "Please enter " + numbers.length + " numbers to be sorted.";
+System.out.println ("Please enter " + numbers.length + " numbers to be sorted.");
 	while (x < 3) {
-		println	"Enter a number: "
+		System.out.println	("Enter a number: ");
 		String str = System.console().readLine();
 		numbers[x] = Integer.parseInt(str);
 		x++;
@@ -28,7 +28,7 @@ println "Please enter " + numbers.length + " numbers to be sorted.";
 		numbers[currLowIndex] = numbers[y]; 
 		numbers[y] = currLowNumber;
 		}	
-	println ("Your three sorted numbers from lowest to highest are " + numbers);	  
+	System.out.println ("Your three sorted numbers from lowest to highest are " + numbers);	  
 }
 
 

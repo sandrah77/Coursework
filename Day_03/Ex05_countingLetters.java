@@ -9,55 +9,23 @@ in the text.
 import java.util.Scanner;
 
 public class Ex05_countingLetters {
-	
 	public static void main (String[] args) {
-
-
+ 
 	Scanner input = new Scanner(System.in); 
 	System.out.println ("Please enter your string of text: ");
-	String reader = input.nextLine();
-	System.out.println("Your text has: " + reader.length() + " characters.");
-	for (int x = 0; x < reader.length(); x++) {
-		System.out.println(reader.charAt(x));
+	String str = input.nextLine();
+	System.out.println ("Please enter the character you would like to look for: ");
+	char letter = input.next().charAt(0);
+	int loop = 0;
 
+		for (int i = 0; i < str.length(); i++) {
+				char e = str.charAt(i);
+				if (e == (letter)) {
+					loop = loop + 1;  
+				}
+		}
+		System.out.println("We have found your letter " + loop + " times in the text.");
+	}	
+}
 
-	 }
-	 boolean a = containsChar(reader, 'e');
-
-	if (a == true) {
-	 	System.out.println("whooooo");
-	 }
-
-	int number = numOfChar(reader, 'e');
-	
-	}
-	public static boolean containsChar (String s, char c) {
-	 	if (s.length() == 0) { 
-	 		return false;
-	 	} else {
-	 		for (int x = 0; x < s.length(); x++) {
-		 		if (s.charAt(x) ==  c) {
-		 			return true;
-		 		}
-		 		else {
-		 			return false;
-		 		}	
-	 		
-	 		}
-	
-	 	}
-		public static int numOfChar (String s, char c) {
-	 	if (s.length() == 0) { 
-	 		return 0;
-	 	} else {
-	 		int count = 0;
-	 		for (int x = 0; x < s.length(); x++) {
-		 		if (s.charAt(x) ==  c) {
-		 			count++;
-		 		}
-		 	}
-		 	return count;
-		} 	
-		 		
-  }
 
