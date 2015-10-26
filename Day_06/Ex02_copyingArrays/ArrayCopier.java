@@ -21,9 +21,11 @@ public class ArrayCopier {
 		ArrayCopier test = new ArrayCopier();
 
 		int[] srcTransfer = {1,2,3,4,5};
-		int[] dstSmaller = new int[3];
-		int[] dstEqual = new int[5];
-		int[] dstLarger = new int [10];
+		int[] dstSmaller = {3,5,7,2};
+		int[] dstEqual = {2,3,8,1,9};
+		int[] dstLarger = {10,86,115,18,16,865,16,14,84,33};
+
+	
 
 		test.copy(srcTransfer, dstSmaller);
 		test.printer(srcTransfer, dstSmaller);
@@ -33,8 +35,6 @@ public class ArrayCopier {
 		
 		test.copy(srcTransfer, dstLarger);
 		test.printer(srcTransfer, dstSmaller);
-		
-		System.out.println(Arrays.toString(printer))
 
 	}
 	public void copy(int[] src, int[] dst) {
@@ -43,10 +43,12 @@ public class ArrayCopier {
 			if (i <= dst.length) {
 				src[i] = dst[i];
 			}else if(i > dst.length) {
-				src[i] = src[j]
-			
+					src[i] = src[j];
 			}
-
+			System.out.println(dst[i] + " ");
+			System.out.println(src[i] + " ");
 		}		
-	}		
+
+	}
 }
+
