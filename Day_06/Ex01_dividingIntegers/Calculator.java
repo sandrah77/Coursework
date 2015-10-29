@@ -15,36 +15,36 @@ Write a small Groovy or Java Decaf program that uses all the methods of Calculat
 import java.util.Scanner;
 
 public class Calculator {
-	
+		// Perform addition on the given integers.
 		public void add(int x, int y) {
 			System.out.println ("Addition: ");
 			System.out.println (x + y);
 		}	
-
+		// Perform subtraction on the given integers.
 		public void subtract(int x, int y) {
 			System.out.println ("Subtraction: ");
 			System.out.println (x - y);
 		}
-
+		// Perform multiplication on the given integers.
 		public void multiply(int x, int y) {
 			System.out.println ("Multiplication: ");
 			System.out.println (x * y);
 		}
-
+    	// Perform division on the given integers.
 		public void divide(int x, int y) {
 			System.out.println ("Division: ");
 			System.out.println ((double) x / y);
 		}
-
+		// Perform modulus on the given integers.
 		public void modulus(int x, int y) {
 			System.out.println ("Modulus: ");
 			System.out.print (x % y);
 
 		}
-	
+		
 	public static void main (String[] args) {
-		int x = 20;
-		int y = 5;
+		private int x = 20;
+		private int y = 5;
 
 		Calculator calc = new Calculator();
 		calc.add(x, y);
