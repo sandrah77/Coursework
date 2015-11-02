@@ -12,7 +12,6 @@ Note that you will will need to cast the parameters into double to perform exact
 Write a small Groovy or Java Decaf program that uses all the methods of Calculator.
 */
 
-import java.util.Scanner;
 
 public class Calculator {
 		// Perform addition on the given integers.
@@ -43,8 +42,8 @@ public class Calculator {
 		}
 		
 	public static void main (String[] args) {
-		private int x = 20;
-		private int y = 5;
+			int x = 20;
+			int y = 5;
 
 		Calculator calc = new Calculator();
 		calc.add(x, y);
