@@ -37,7 +37,6 @@ public class MatrixChecker {
 		MatrixChecker check = new MatrixChecker();
 		return check.isSymmetrical(Matrix.myMatrix);
 	*/
-	}
 
 	public boolean isSymmetrical(int[][]) { 
 		MatrixChecker check = new MatrixChecker();
