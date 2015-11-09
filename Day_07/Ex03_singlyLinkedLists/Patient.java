@@ -10,14 +10,17 @@ public class Patient {
 		this.age = age;
 		this.illness = illness;
 		this.nextPatient = null; 
-
+		System.out.println("Patient: " + this.name + ", age: " + this.age);
+	}
+	/*
 	public void nextPatient(int x) {
-		if (this.addPatient == null) {
-			x++ 
+		if (this.nextPatient == null) {
+			x++;
 			} else {
 			System.out.println (this.Patient.patientListStart);
 			}
 		}
+	}*/
 
 	public void addPatient(Patient newPatient) {
 		if (this.nextPatient == null) {
@@ -27,6 +30,10 @@ public class Patient {
 			this.nextPatient.addPatient(newPatient);
 		}
 	}
+	
+	public String getName(){
+		return this.name;
+	}
 
 	public boolean deletePatient (Patient patient) {
 		if (this.nextPatient == null) {
@@ -35,13 +42,13 @@ public class Patient {
 		} else if (this.nextPatient.name.equals(patient.name)) {
 			// We found it! It is the next one!
 			// Now link this patient to the one after the next
-			this.nextPatient = nextPatient.nextPatient
+			this.nextPatient = this.nextPatient.nextPatient;
 			return true;
 		} else {
 			return this.nextPatient.deletePatient(patient);
 		}
+		
 
-
-		}
+	}
 }
 
