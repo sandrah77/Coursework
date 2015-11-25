@@ -10,5 +10,5 @@ int ageAprox = currentYear - birthYear;
 // Is greater than 17? If so print a space and if not (:) print "not "
 String result = (ageAprox > 17) ? "" : "not "
 // It seems you are + not + an adult (if under 17)...
-println "It seems you are " + result + "an adult."
+println "It seems you are " + result + "an adult.."
 
