@@ -6,8 +6,8 @@ Create a class Matrix that has a 2-D array of integers as a field. The class sho
 
 • a method setElement(int,int,int) to modify one element of the array, given its position 
 (the first two integers) and the new value to be put in that position (the third integer). 
-The method must check that the indeces are valid before modifying the array to avoid an 
-IndexOutOfBoundsException. If the indeces are invalid, the method will do nothing and the third 
+The method must check that the indices are valid before modifying the array to avoid an
+IndexOutOfBoundsException. If the indices are invalid, the method will do nothing and the third
 argument will be ignored.
 
 • a method setRow(int,String) that modifies one whole row of the array, given its position as an 
@@ -29,13 +29,14 @@ are placed in the same column regardless of their size. You can think of a tabul
 move-to-the-next-column command when printing on the screen.
 
 Create a Groovy program that uses all those methods from the Matrix class: creates matrices, 
-modifies its elements (one-by-one, by rows, and by columns), and prints the matrix on the screeen.
+modifies its elements (one-by-one, by rows, and by columns), and prints the matrix on the screen.
 */
 
 public class Matrix {
 	private int[][] myMatrix; // declare a matrix of type int
 
-	// Construct the 2-D Matrix to hold the data with given size. 
+	// Construct the 2-D Matrix to hold the data with given size.
+	// ..initialise the 2-D Matrix with ones.
 	public Matrix(int arrSize1, int arrSize2) { 
 		this.myMatrix = new int[arrSize1][arrSize2];
 
@@ -106,11 +107,10 @@ public class Matrix {
 
 	Matrix myMatrix = new Matrix(5, 5);
 	System.out.println(myMatrix.toString());	
-	//myMatrix.setElement(5,9,20);
-	//myMatrix.setRow(0, "1,2,3");
-	//myMatrix.setColumn(1, "4,5,6,7");
-	//myMatrix.prettyPrint();
-
+	myMatrix.setElement(5,9,20);
+	myMatrix.setRow(0, "1,2,3");
+	myMatrix.setColumn(1, "4,5,6,7");
+	myMatrix.prettyPrint();
 
 	}	
 }
