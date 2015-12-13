@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Coursework.iml" filepath="$PROJECT_DIR$/Coursework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_06_movingToJava/Day_06_movingToJava.iml" filepath="$PROJECT_DIR$/Day_06_movingToJava/Day_06_movingToJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_07_dynamic DataStructures/Day_07_dynamic DataStructures.iml" filepath="$PROJECT_DIR$/Day_07_dynamic DataStructures/Day_07_dynamic DataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_08_interfaces/Day_08_interfaces.iml" filepath="$PROJECT_DIR$/Day_08_interfaces/Day_08_interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_09_trees/Day_09_trees.iml" filepath="$PROJECT_DIR$/Day_09_trees/Day_09_trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_10_inheritance/Day_10_inheritance.iml" filepath="$PROJECT_DIR$/Day_10_inheritance/Day_10_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_11_polymorphism/Day_11_polymorphism.iml" filepath="$PROJECT_DIR$/Day_11_polymorphism/Day_11_polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_12_softwareTesting/Day_12_softwareTesting.iml" filepath="$PROJECT_DIR$/Day_12_softwareTesting/Day_12_softwareTesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_16_IO/Day_16_IO.iml" filepath="$PROJECT_DIR$/Day_16_IO/Day_16_IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_17_concurrentProgramming/Day_17_concurrentProgramming.iml" filepath="$PROJECT_DIR$/Day_17_concurrentProgramming/Day_17_concurrentProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_06_movingToJava/Ex01_dividingIntegers/Ex01_dividingIntegers.iml" filepath="$PROJECT_DIR$/Day_06_movingToJava/Ex01_dividingIntegers/Ex01_dividingIntegers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_06_movingToJava/Ex02_copyingArrays/Ex02_copyingArrays.iml" filepath="$PROJECT_DIR$/Day_06_movingToJava/Ex02_copyingArrays/Ex02_copyingArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_18_concurrentProgramming(II)/Ex02_textLoops/Ex02_textLoops.iml" filepath="$PROJECT_DIR$/Day_18_concurrentProgramming(II)/Ex02_textLoops/Ex02_textLoops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_06_movingToJava/Ex03_creatingMatrices/Ex03_creatingMatrices.iml" filepath="$PROJECT_DIR$/Day_06_movingToJava/Ex03_creatingMatrices/Ex03_creatingMatrices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day_18_concurrentProgramming(II)/Ex03_responsiveUI/Ex03_responsiveUI.iml" filepath="$PROJECT_DIR$/Day_18_concurrentProgramming(II)/Ex03_responsiveUI/Ex03_responsiveUI.iml" />
+    </modules>
+  </component>
+</project>
